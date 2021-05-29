@@ -25,21 +25,52 @@
     /* chat window  take height 90% of right view*/
     height: 90%;
 
+    /*to create space between boundary and chat window content.*/
+    padding: 10px;
+
 }
 .chat{
-
+    /*font color of chat text.*/
+    color: white;
+    min-height: 30px;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top:5px;
 }
 .left{
-
+    background: #2c3e50;
 }
 .right{
-
+    background: #7b59c0;
 }
 .join{
+    background:  #3498db;
+    width: 80%;
 
+    /*so that it is in center*/
+    margin: auto;
+    margin-top: 15px;
+
+    /*START: bringing join chat text to center*/
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    /*end: bringing join chat text to center*/
 }
 .leave{
+    background: #e74c3c;
+    width: 80%;
 
+    /*so that it is in center*/
+    margin: auto;
+    margin-top: 15px;
+
+    /*START: bringing join chat text to center*/
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    /*end: bringing join chat text to center*/
 }
 .chat-input{
     /*chat input to take 10% height of right view.*/
