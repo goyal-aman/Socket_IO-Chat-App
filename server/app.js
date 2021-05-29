@@ -18,13 +18,20 @@ io.on("connection", function(socket){
     socket.on("userConnected", function(userName){
         let userObject = {id: socket.id, userName:userName};
         userList[socket.id] = userObject;
-        socket.broadcast.emit('join', userName);
+
+        // sending current user list to all active users.
+        socket.broadcast.emit('join', userObject);
+
+        socket.emit('latest-online-list', userList);
+
+        // send list of currently active users to user who has joined.
+        // socket.broadcast.emit("new-user-online", userObject);
     })
 
     socket.on('disconnect', function(){
         let userObj = userList[socket.id];
         try{
-            socket.broadcast.emit("userDisconnect", userObj.userName)
+            socket.broadcast.emit("userDisconnect", userObj)
         }
         catch(e){
             console.log("ERROR: "+e);
@@ -37,6 +44,7 @@ io.on("connection", function(socket){
         socket.broadcast.emit("message", MessageObj);
 
     })
+
 })
 
 
