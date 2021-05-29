@@ -1,7 +1,9 @@
 let chatInput = document.querySelector('.chat-input');
 let chatWindow = document.querySelector('.chat-window');
 
-let userName = prompt("Enter Your Name");
+// WARNING: Uncommetn below line for demo or production.
+// let userName = prompt("Enter Your Name");
+let userName = "test";
 
 chatInput.addEventListener('keypress', function(e){
     /* add 'me' user chat to chat window. */
