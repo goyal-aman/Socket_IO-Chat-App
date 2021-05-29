@@ -30,6 +30,9 @@
     padding: 10px;
 
     width: 100%;
+
+    /*to have scroll bar when chat height exceeds viewport height.*/
+    overflow: auto;
 }
 .chat{
     /*font color of chat text.*/
@@ -42,6 +45,9 @@
 
     width: 250px;
     /* max-width: 49%; */
+    
+    /*  to break text to multiple lines. */
+    word-break: break-all;
 }
 .left{
     background: #2c3e50;
@@ -85,7 +91,7 @@
     align-items:center;
     /*end: bringing join chat text to center*/
 }
-.chat-input{
+.chat-input-box{
     /*chat input to take 10% height of right view.*/
     height: 10%;
     background: #34495e;
@@ -96,7 +102,7 @@
     align-items: center; /* align vertically*/
 
 }
-.chat-input input{
+.chat-input-box input{
     height: 70%;
     width: 80%;
     background: #2c3e50;
