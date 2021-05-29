@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+.chat-container{
+    height: 100vh;
+    background: peru;
+    
+    /*since we need left-view and right-view side by side*/
+    display: flex; 
+}
+.left-view{
+    height: 100%;
+    width: 25%;
+    background: purple;
+}
+.right-view{
+    width: 75%;
+    height: 100%;
+    background:#34495e;
+}
+.chat-window{
+    /* chat window  take height 90% of right view*/
+    height: 90%;
+
+}
+.chat{
+
+}
+.left{
+
+}
+.right{
+
+}
+.join{
+
+}
+.leave{
+
+}
+.chat-input{
+    /*chat input to take 10% height of right view.*/
+    height: 10%;
+    background: #34495e;
+    display: flex;
+    
+    /*to aling input box (.chat-input input) to center.*/
+    justify-content: center; /* align horizontally.*/
+    align-items: center; /* align vertically*/
+
+}
+.chat-input input{
+    height: 70%;
+    width: 80%;
+    background: #2c3e50;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size : 1.2rem;
+
+    /*so that text doesn't touch input boundaries.*/
+    padding: 10px;
+
+    /* chat font color.*/
+    color: white;
+}
