@@ -20,6 +20,7 @@
     width: 75%;
     height: 100%;
     background:#34495e;
+    font-family: 'Roboto', sans-serif; 
 }
 .chat-window{
     /* chat window  take height 90% of right view*/
